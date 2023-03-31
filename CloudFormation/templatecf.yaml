@@ -79,7 +79,7 @@ Resources:
         - "x86_64"
       Code:
         S3Bucket: "photostore2"
-        S3Key: "LF1_index_img_cf.zip"
+        S3Key: "index-photo.zip"
       MemorySize: 128
       Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/service-role/index-photos-role-ucljjuz6"
       Runtime: "python3.8"
