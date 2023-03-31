@@ -7,7 +7,7 @@ Resources:
     Type: "AWS::IAM::Role"
     Properties:
       Path: "/"
-      RoleName: "api-gateway-s3-new"
+      RoleName: "apitos3"
       AssumeRolePolicyDocument: "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}"
       MaxSessionDuration: 3600
       ManagedPolicyArns:
