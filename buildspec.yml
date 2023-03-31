@@ -11,6 +11,5 @@ phases:
 artifacts:
  type: zip
  files:
-  - '**/*'
-  - template.yaml
-  - template2.yaml
+  - ./Frontend
+  - ./lambdas
