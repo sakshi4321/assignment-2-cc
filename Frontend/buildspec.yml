@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+ install:
+  runtime-versions:
+   python: 3.7
+ build: 
+  commands:
+   - sam build
+   - export BUCKET=photoalbumb2assign2-new
+   - sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file template2.yaml
+artifacts:
+ type: zip
+ files:
+  - template.yaml
+  - template2.yaml
