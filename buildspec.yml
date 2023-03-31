@@ -7,7 +7,7 @@ phases:
   commands:
    - sam build
    - export BUCKET=photostore2
-   - sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file template2.yaml
+   - aws cloudformation package --template-file template.yaml --s3-bucket $BUCKET --output-template-file template2.yaml
 artifacts:
  type: zip
  files:
