@@ -3,7 +3,7 @@ import urllib.parse
 import boto3
 import datetime
 import requests
-## I am here now
+## I am here now for thursday demo
 ## This is for Demo
 print('Loading function')
 
